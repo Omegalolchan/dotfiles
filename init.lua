@@ -2,7 +2,12 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop=4
 vim.opt.shiftwidth=4
 vim.expandtab = True
+vim.opt.guicursor = ""
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 vim.cmd("set number")
+vim.cmd("set mouse=a")
+vim.cmd("set cursorline")
 vim.cmd("set foldmethod=marker")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
