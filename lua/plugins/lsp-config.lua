@@ -20,11 +20,13 @@ return {
 			lspconfig.gdscript.setup({
 				capabilities = capabilities
 			})
+			lspconfig.clangd.setup({
+				capabilities = capabilities
+			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities
 			})
 			
-			vim.keymap.set('n', '<C-up>', vim.lsp.buf.hover, {})
 			vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) 
 			vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, {})
 			

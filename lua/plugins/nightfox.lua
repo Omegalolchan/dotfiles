@@ -6,6 +6,5 @@ return {
 				transparent = true
 			}
 		})
-		vim.cmd("colorscheme carbonfox")
 	end
 }
